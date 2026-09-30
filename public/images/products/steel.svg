@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="steelBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#28323A" />
+      <stop offset="100%" stop-color="#17191C" />
+    </linearGradient>
+    <linearGradient id="rebarGrad1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#9CA3AF" />
+      <stop offset="40%" stop-color="#4B5563" />
+      <stop offset="70%" stop-color="#1F2937" />
+      <stop offset="100%" stop-color="#374151" />
+    </linearGradient>
+    <linearGradient id="rebarGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#D1D5DB" />
+      <stop offset="50%" stop-color="#6B7280" />
+      <stop offset="100%" stop-color="#111827" />
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="600" fill="url(#steelBg)" />
+
+  <g stroke="#ffffff" stroke-opacity="0.05" stroke-width="1">
+    <line x1="0" y1="150" x2="600" y2="150" />
+    <line x1="0" y1="300" x2="600" y2="300" />
+    <line x1="0" y1="450" x2="600" y2="450" />
+    <line x1="150" y1="0" x2="150" y2="600" />
+    <line x1="300" y1="0" x2="300" y2="600" />
+    <line x1="450" y1="0" x2="450" y2="600" />
+  </g>
+
+  <ellipse cx="300" cy="510" rx="200" ry="24" fill="#000" opacity="0.6" filter="blur(8px)" />
+
+  <!-- Diagonal Deformed Steel Rebars Bundle -->
+  <!-- Rebar 1 -->
+  <g transform="rotate(25 300 300)">
+    <rect x="180" y="80" width="34" height="460" rx="17" fill="url(#rebarGrad1)" stroke="#374151" />
+    <!-- Ribs / Deformations -->
+    <path d="M182 120 L212 108 M182 150 L212 138 M182 180 L212 168 M182 210 L212 198 M182 240 L212 228 M182 270 L212 258 M182 300 L212 288 M182 330 L212 318 M182 360 L212 348 M182 390 L212 378 M182 420 L212 408 M182 450 L212 438 M182 480 L212 468" stroke="#D1D5DB" stroke-width="3.5" stroke-linecap="round" opacity="0.8" />
+  </g>
+
+  <!-- Rebar 2 (Central Foreground) -->
+  <g transform="rotate(25 300 300)">
+    <rect x="235" y="60" width="42" height="500" rx="21" fill="url(#rebarGrad2)" stroke="#1F2937" />
+    <!-- Prominent ASTM Deformations -->
+    <path d="M238 100 L274 85 M238 135 L274 120 M238 170 L274 155 M238 205 L274 190 M238 240 L274 225 M238 275 L274 260 M238 310 L274 295 M238 345 L274 330 M238 380 L274 365 M238 415 L274 400 M238 450 L274 435 M238 485 L274 470 M238 520 L274 505" stroke="#F3F4F6" stroke-width="4.5" stroke-linecap="round" opacity="0.9" />
+  </g>
+
+  <!-- Rebar 3 -->
+  <g transform="rotate(25 300 300)">
+    <rect x="300" y="90" width="36" height="450" rx="18" fill="url(#rebarGrad1)" stroke="#374151" />
+    <path d="M302 130 L334 118 M302 165 L334 153 M302 200 L334 188 M302 235 L334 223 M302 270 L334 258 M302 305 L334 293 M302 340 L334 328 M302 375 L334 363 M302 410 L334 398 M302 445 L334 433 M302 480 L334 468" stroke="#D1D5DB" stroke-width="3.5" stroke-linecap="round" opacity="0.8" />
+  </g>
+
+  <!-- Grade 60 Technical Badge -->
+  <rect x="50" y="70" width="160" height="42" rx="4" fill="#17191C" stroke="#F28C28" stroke-width="2" />
+  <text x="130" y="97" font-family="'Cabinet Grotesk', sans-serif" font-weight="900" font-size="18" fill="#FFFFFF" text-anchor="middle">GRADE 60 STEEL</text>
+  <text x="130" y="130" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="12" fill="#9CA3AF" text-anchor="middle">ASTM A615 TMT</text>
+</svg>

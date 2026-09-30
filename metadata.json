@@ -1,0 +1,6 @@
+{
+  "name": "Al Mushtaq Building Material Store",
+  "description": "Professional ecommerce platform and marketplace for construction supplies, cement, steel, bricks, tiles, paint, plumbing, electrical, and hardware in Rahim Yar Khan.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

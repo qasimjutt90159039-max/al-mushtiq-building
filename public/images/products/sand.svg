@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="sandBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#28323A" />
+      <stop offset="100%" stop-color="#17191C" />
+    </linearGradient>
+    <linearGradient id="sandMound" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F4B942" />
+      <stop offset="40%" stop-color="#D99B26" />
+      <stop offset="100%" stop-color="#8C5C0F" />
+    </linearGradient>
+    <linearGradient id="crushMound" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#9CA3AF" />
+      <stop offset="50%" stop-color="#4B5563" />
+      <stop offset="100%" stop-color="#1F2937" />
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="600" fill="url(#sandBg)" />
+
+  <g stroke="#ffffff" stroke-opacity="0.05" stroke-width="1">
+    <line x1="0" y1="150" x2="600" y2="150" />
+    <line x1="0" y1="300" x2="600" y2="300" />
+    <line x1="0" y1="450" x2="600" y2="450" />
+    <line x1="150" y1="0" x2="150" y2="600" />
+    <line x1="300" y1="0" x2="300" y2="600" />
+    <line x1="450" y1="0" x2="450" y2="600" />
+  </g>
+
+  <!-- Crushed Stone Mound in Background (Left) -->
+  <path d="M60 480 Q 200 230 340 480 Z" fill="url(#crushMound)" />
+  <!-- Crushed rock textures -->
+  <g fill="#D1D5DB" opacity="0.6">
+    <polygon points="170,360 185,350 195,365 175,370" />
+    <polygon points="210,320 225,310 235,330 215,335" />
+    <polygon points="240,370 255,355 270,375 250,385" />
+    <polygon points="150,420 165,405 180,425 160,435" />
+    <polygon points="280,410 295,395 310,415 290,425" />
+  </g>
+
+  <!-- Clean Washed Sand Mound in Foreground (Right/Center) -->
+  <path d="M180 500 Q 380 200 550 500 Z" fill="url(#sandMound)" />
+
+  <!-- Natural Sand Dunes Ridge Texture -->
+  <path d="M260 420 Q 380 250 490 440" stroke="#FCE7A6" stroke-width="2.5" fill="none" opacity="0.4" />
+  <path d="M220 460 Q 370 290 520 470" stroke="#8C5C0F" stroke-width="3" fill="none" opacity="0.3" />
+
+  <!-- Label Badge -->
+  <rect x="200" y="70" width="200" height="42" rx="4" fill="#17191C" stroke="#F4B942" stroke-width="1.5" />
+  <text x="300" y="97" font-family="'Cabinet Grotesk', sans-serif" font-weight="900" font-size="16" fill="#FFFFFF" text-anchor="middle">CHENAB &amp; MARGALLA</text>
+  <text x="300" y="130" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="12" fill="#9CA3AF" text-anchor="middle">SCREENED AGGREGATES</text>
+</svg>

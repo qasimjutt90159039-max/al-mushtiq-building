@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#28323A" />
+      <stop offset="100%" stop-color="#17191C" />
+    </linearGradient>
+    <linearGradient id="bagGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E5E7EB" />
+      <stop offset="100%" stop-color="#9CA3AF" />
+    </linearGradient>
+    <linearGradient id="accentOrange" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F28C28" />
+      <stop offset="100%" stop-color="#F4B942" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000" flood-opacity="0.5" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="600" height="600" fill="url(#bgGrad)" />
+
+  <!-- Construction Grid Lines -->
+  <g stroke="#ffffff" stroke-opacity="0.05" stroke-width="1">
+    <line x1="0" y1="150" x2="600" y2="150" />
+    <line x1="0" y1="300" x2="600" y2="300" />
+    <line x1="0" y1="450" x2="600" y2="450" />
+    <line x1="150" y1="0" x2="150" y2="600" />
+    <line x1="300" y1="0" x2="300" y2="600" />
+    <line x1="450" y1="0" x2="450" y2="600" />
+  </g>
+
+  <!-- Ground Shadow -->
+  <ellipse cx="300" cy="510" rx="190" ry="26" fill="#000000" opacity="0.45" filter="blur(8px)" />
+
+  <!-- Bag Shape -->
+  <g filter="url(#shadow)">
+    <!-- Main Sack Body -->
+    <path d="M180 160 C 220 145, 380 145, 420 160 C 445 220, 450 420, 425 480 C 380 495, 220 495, 175 480 C 150 420, 155 220, 180 160 Z" fill="url(#bagGrad)" stroke="#4B5563" stroke-width="2" />
+    
+    <!-- Top Stitched Seal -->
+    <path d="M175 160 Q 300 145 425 160" stroke="#374151" stroke-width="6" stroke-dasharray="8 4" fill="none" />
+    <!-- Bottom Stitched Seal -->
+    <path d="M170 480 Q 300 495 430 480" stroke="#374151" stroke-width="6" stroke-dasharray="8 4" fill="none" />
+
+    <!-- Center Accent Band -->
+    <path d="M165 260 C 220 255, 380 255, 435 260 L 442 360 C 380 365, 220 365, 158 360 Z" fill="url(#accentOrange)" />
+
+    <!-- Text & Markings on Bag -->
+    <text x="300" y="225" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="20" fill="#1F2937" text-anchor="middle" letter-spacing="3">PORTLAND CEMENT</text>
+    <text x="300" y="305" font-family="'Cabinet Grotesk', sans-serif" font-weight="900" font-size="34" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">PREMIUM 53</text>
+    <text x="300" y="340" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="16" fill="#17191C" text-anchor="middle">HIGH EARLY STRENGTH</text>
+
+    <!-- Bottom Badge & Weight -->
+    <rect x="235" y="400" width="130" height="42" rx="4" fill="#17191C" />
+    <text x="300" y="428" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="20" fill="#F4B942" text-anchor="middle">NET 50 KG</text>
+  </g>
+</svg>

@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="brickBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#28323A" />
+      <stop offset="100%" stop-color="#17191C" />
+    </linearGradient>
+    <linearGradient id="clayTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D95338" />
+      <stop offset="100%" stop-color="#B83820" />
+    </linearGradient>
+    <linearGradient id="clayFront" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9C2C15" />
+      <stop offset="100%" stop-color="#7A2210" />
+    </linearGradient>
+    <linearGradient id="claySide" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#BF3B1E" />
+      <stop offset="100%" stop-color="#8F2913" />
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="600" fill="url(#brickBg)" />
+
+  <!-- Blueprint Grid -->
+  <g stroke="#ffffff" stroke-opacity="0.05" stroke-width="1">
+    <line x1="0" y1="150" x2="600" y2="150" />
+    <line x1="0" y1="300" x2="600" y2="300" />
+    <line x1="0" y1="450" x2="600" y2="450" />
+    <line x1="150" y1="0" x2="150" y2="600" />
+    <line x1="300" y1="0" x2="300" y2="600" />
+    <line x1="450" y1="0" x2="450" y2="600" />
+  </g>
+
+  <!-- Shadow -->
+  <ellipse cx="300" cy="500" rx="210" ry="30" fill="#000" opacity="0.5" />
+
+  <!-- 3D Isometric Brick Stack -->
+  <!-- Bottom Brick -->
+  <g transform="translate(40, 60)">
+    <!-- Top Face -->
+    <polygon points="120,330 360,250 480,290 240,370" fill="url(#clayTop)" stroke="#661C0D" stroke-width="1.5" />
+    <!-- Front Face -->
+    <polygon points="120,330 240,370 240,430 120,390" fill="url(#clayFront)" stroke="#661C0D" stroke-width="1.5" />
+    <!-- Side Face -->
+    <polygon points="240,370 480,290 480,350 240,430" fill="url(#claySide)" stroke="#661C0D" stroke-width="1.5" />
+  </g>
+
+  <!-- Middle Brick Offset -->
+  <g transform="translate(0, 0)">
+    <polygon points="160,260 400,180 520,220 280,300" fill="url(#clayTop)" stroke="#661C0D" stroke-width="1.5" />
+    <polygon points="160,260 280,300 280,360 160,320" fill="url(#clayFront)" stroke="#661C0D" stroke-width="1.5" />
+    <polygon points="280,300 520,220 520,280 280,360" fill="url(#claySide)" stroke="#661C0D" stroke-width="1.5" />
+    <!-- Frog indention on top -->
+    <polygon points="220,250 360,205 440,230 300,275" fill="#7A2210" />
+  </g>
+
+  <!-- Top Showcase Brick -->
+  <g transform="translate(-30, -70)">
+    <polygon points="180,240 420,160 540,200 300,280" fill="url(#clayTop)" stroke="#661C0D" stroke-width="2" />
+    <polygon points="180,240 300,280 300,340 180,300" fill="url(#clayFront)" stroke="#661C0D" stroke-width="2" />
+    <polygon points="300,280 540,200 540,260 300,340" fill="url(#claySide)" stroke="#661C0D" stroke-width="2" />
+    <!-- Classic Brick Frog with Brand Stamp -->
+    <polygon points="240,230 380,185 460,210 320,255" fill="#5E180A" />
+    <text x="350" y="225" font-family="'Cabinet Grotesk', sans-serif" font-weight="900" font-size="14" fill="#F4B942" text-anchor="middle" transform="rotate(-18 350 225)">AL MUSHTAQ</text>
+  </g>
+</svg>
